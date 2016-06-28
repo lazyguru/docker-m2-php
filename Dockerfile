@@ -1,6 +1,7 @@
 FROM lazyguru/mage2base
 
 # Installing PHP 7.0
+RUN yum -y install http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 RUN yum -y install https://mirror.webtatic.com/yum/el6/latest.rpm
 RUN yum -y install php70w-pecl-memcache php70w-fpm php70w-intl php70w-mcrypt php70w-mbstring php70w-mysql php70w-pdo php70w-mbstring php70w-soap php70w-pecl-zendopcache php70w-xml php70w-gd php70w-opcache php70w-pecl-imagick php70w-bcmath
 # <---- End
